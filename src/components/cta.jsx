@@ -10,7 +10,8 @@ const CTA = () => {
           {/* Text and CTA */}
           <div className="col-span-6 max-md:pb-6 sm:col-span-5 md:col-span-4 md:pt-6">
             <h1 className="text-foreground text-balance text-5xl font-semibold sm:text-6xl">
-              Modern Solutions for Customer{' '}
+              Modern Solutions for Your 
+{' '}
               <span className="relative ">
                 <svg
                   aria-hidden="true"
@@ -38,11 +39,11 @@ const CTA = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className="relative bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] inline-block text-transparent bg-clip-text">Join Us</span>
+                <span className="relative bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] inline-block text-transparent bg-clip-text">Customers</span>
               </span>
             </h1>
             <p className="text-gray-600 mb-6 mt-4 text-balance text-lg">
-              Empowering businesses with cutting-edge technology to streamline operations and drive success.
+Join Us Today to Streamline Operations and Drive Success with Cutting-Edge Technology.
             </p>
             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
               <Link href="#">Start Building</Link>

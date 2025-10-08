@@ -81,11 +81,12 @@ export default function IntegrationsSection() {
                     {/* Section bottom text */}
                     <div className="mx-auto mt-12 max-w-lg space-y-6 text-center">
                         <h2 className="text-balance text-3xl font-semibold md:text-4xl">
-                            Integrate with your favorite tools
-                        </h2>
+Specialized AI Platforms Engineered for Your Market
+
+ </h2>
                         <p className="text-muted-foreground">
-                            Connect seamlessly with popular platforms and services to enhance
-                            your workflow.
+Unlike generic website builders, we create industry-specific solutions because we understand that a restaurant's needs are completely different from a medical clinic's requirements. By treating each industry separately, we deliver features that actually move the needle for your business—not just generic templates.
+
                         </p>
 
                         <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">

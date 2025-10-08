@@ -65,18 +65,19 @@ export default function PricingWithChart() {
                                     className="absolute bottom-1 right-1 size-[3px] rounded-full bg-gray-950/20"
                                 />
                                 <div className="relative flex h-fit items-center gap-2 rounded-full bg-white px-3 py-1 shadow">
-                                    <span className="text-title text-sm">Features</span>
+                                    <span className="text-title text-sm">Pricing Plans</span>
 
                                 </div>
                             </div>
                         </div>
-                        <div className="mx-auto max-w-3xl text-center ">
+                        <div className="mx-auto max-w-2xl text-center ">
                             <h1 className="text-foreground text-balance text-4xl font-medium sm:text-5xl ">
-                                Transform your Sales with Data-Driven Insights
+Pricing That Powers Your Growth
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance text-lg">
-                                Efficiently manage your sales team with our innovative tools. Enhance productivity, and
-                                achieve your sales!
+                                Choose a plan designed to fit your ambition—no surprises, no long-term lock-ins.
+
+
                             </p>
 
                         </div>
@@ -97,13 +98,14 @@ export default function PricingWithChart() {
                         <div className="space-y-4">
                             <div>
                                 <h2 className="backdrop-blur-2 inline rounded-[2px] p-1 text-xl font-semibold">
-                                    Free
+                                    Monthly Package
                                 </h2>
                                 <span className="my-3 block text-4xl relative bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff]  text-transparent bg-clip-text">
-                                    $0
+                                    $99
                                 </span>
                                 <p className="text-muted-foreground text-sm">
-                                    Best for testing & understanding
+Ideal for small businesses getting started
+
                                 </p>
                             </div>
 
@@ -115,9 +117,11 @@ export default function PricingWithChart() {
 
                             <ul className="text-muted-foreground space-y-3 text-sm">
                                 {[
-                                    'Basic Analytics Dashboard',
-                                    '5GB Cloud Storage',
-                                    'Email & Chat Support',
+                                    'Mobile-First Responsive Design',
+                                    'Instant Booking & Reservations',
+                                    'Lead Capture & Analytics Dashboard',
+                                    'Secure Hosting & Ongoing Maintenance',
+                                    '24/7 Customer Support',
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-purple-600" />
@@ -133,12 +137,12 @@ export default function PricingWithChart() {
                         {/* Pricing + Chart */}
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
-                                <h2 className="text-xl font-semibold">Pro Monthly Package</h2>
+                                <h2 className="text-xl font-semibold">AI Monthly Package</h2>
                                 <span className="my-3 block text-4xl relative bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff]  text-transparent bg-clip-text">
-                                    $299
+                                    $199
                                 </span>
                                 <p className="text-muted-foreground text-sm">
-                                    Perfect for small businesses & startups
+                                    Perfect for growing businesses ready to scale
                                 </p>
                             </div>
                             <div className="bg-muted/30 h-fit w-full rounded-2xl border p-2">
@@ -147,9 +151,11 @@ export default function PricingWithChart() {
                                         <Visual1 mainColor="#ff6900" secondaryColor="#f54900" />
                                     </CardVisual>
                                     <CardBody>
-                                        <CardTitle>Just find the right caption</CardTitle>
-                                        <CardDescription>
-                                            This card will tell everything you want
+                                        <CardTitle>Our Community Grew by 234 Businesses This Month
+</CardTitle>
+                                        <CardDescription className='text-xs'>
+Smart companies are making the switch to AI-powered websites—see why more businesses choose SuperWorld Technologies every day.
+
                                         </CardDescription>
                                     </CardBody>
                                 </AnimatedCard>
@@ -158,19 +164,21 @@ export default function PricingWithChart() {
                         </div>
                         {/* Features */}
                         <div className="relative w-full">
-                            <div className="text-sm font-medium">Everything in Free plus:</div>
+         
                             <ul className="text-muted-foreground mt-4 space-y-3 text-sm">
                                 {[
-                                    'Unlimited access to all tools',
-                                    'Priority customer support',
-                                    'Advanced analytics dashboard',
-                                    'Team collaboration included',
-                                    'Secure cloud storage',
-                                    'Customizable workflows and automation',
-                                    'Integration with popular third-party apps',
-                                    'Role-based access control and permissions',
-                                    'Offline access with automatic sync',
-                                    'Regular updates with new features',
+                                    'AI-Powered Visual Search',
+                                    'AI Smart Recommendations',
+                                    'Automated Follow-Ups',
+                                    'AI-Powered Chatbot',
+                                    'Priority Access to New AI Tools',
+                                    'Custom AI Workflows & Integrations',
+                                       'Mobile-First Responsive Design',
+                                    'Instant Booking & Reservations',
+                                    'Lead Capture & Analytics Dashboard',
+                                    'Secure Hosting & Ongoing Maintenance',
+                                    '24/7 Customer Support',
+                                   
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-[#6C00FF]" />

@@ -1,51 +1,71 @@
 import { Button } from '@/components/ui/button'
 import { Cpu, Sparkles } from 'lucide-react'
 import Link from 'next/link'
+import { Logo } from './logo';
 
 const tableData = [
     {
-        feature: 'Feature 1',
-        free: true,
-        pro: true,
-        startup: true,
+        feature: 'Total Investment',
+        diy_in_house: '$5,000 - $20,000+ upfront',
+        superworld: '$99 - $199/month',
+        other_saas: '$299 - $999/month + hidden fees',
     },
     {
-        feature: 'Feature 2',
-        free: true,
-        pro: true,
-        startup: true,
+        feature: 'Contract Terms',
+        diy_in_house: 'No Contract (High Sunk Cost)',
+        superworld: 'Month-to-Month Freedom',
+        other_saas: '12-36 Month Lock-In',
     },
     {
-        feature: 'Feature 3',
-        free: false,
-        pro: true,
-        startup: true,
+        feature: 'AI-Powered Features',
+        diy_in_house: 'None (Extremely Expensive to Build)',
+        superworld: '✅ AI Visual Search, 24/7 Sales Chat, Smart Booking',
+        other_saas: '❌ None, or basic chatbot for extra cost',
     },
     {
-        feature: 'Tokens',
-        free: '',
-        pro: '20 Users',
-        startup: 'Unlimited',
+        feature: 'Mobile Experience',
+        diy_in_house: 'Poor / Often Broken',
+        superworld: 'Mobile-First, Lightning Fast',
+        other_saas: 'Slow, Clunky, Outdated',
     },
     {
-        feature: 'Video calls',
-        free: '',
-        pro: '12 Weeks',
-        startup: '56',
+        feature: 'Admin Dashboard Experience',
+        diy_in_house: 'Technical & Complex',
+        superworld: 'Simple, 2-Click Updates',
+        other_saas: 'Overwhelming & Confusing',
     },
     {
-        feature: 'Support',
-        free: '',
-        pro: 'Secondes',
-        startup: 'Unlimited',
+        feature: 'Customer Experience (UX)',
+        diy_in_house: 'Amateur & Confusing',
+        superworld: 'Seamless & Conversion-Optimized',
+        other_saas: 'Frustrating for Customers',
     },
     {
-        feature: 'Security',
-        free: '',
-        pro: '20 Users',
-        startup: 'Unlimited',
+        feature: 'Time to Go Live',
+        diy_in_house: '3-6 Months',
+        superworld: '48-72 Hours',
+        other_saas: '6-12 Weeks',
     },
-]
+    {
+        feature: 'Maintenance & Updates',
+        diy_in_house: 'Your Full-Time Job',
+        superworld: '✅ Completely Managed For You',
+        other_saas: 'Your Problem, or Extra Fees',
+    },
+    {
+        feature: 'Customer Support',
+        diy_in_house: 'You Are the Support',
+        superworld: '✅ Dedicated Personal Manager',
+        other_saas: 'Submit a Ticket, Wait for Days',
+    },
+    {
+        feature: 'Business Growth Impact',
+        diy_in_house: 'Minimal / Negative ROI',
+        superworld: '✅ 3x Average Lead Increase',
+        other_saas: '❌ Zero Measurable Value',
+    },
+];
+
 
 export default function PricingComparator() {
     return (
@@ -104,18 +124,18 @@ export default function PricingComparator() {
                                     className="absolute bottom-1 right-1 size-[3px] rounded-full bg-gray-950/20"
                                 />
                                 <div className="relative flex h-fit items-center gap-2 rounded-full bg-white px-3 py-1 shadow">
-                                    <span className="text-title text-sm">Features</span>
+                                    <span className="text-title text-sm">Competition</span>
 
                                 </div>
                             </div>
                         </div>
                         <div className="mx-auto max-w-3xl text-center ">
                             <h1 className="text-foreground text-balance text-4xl font-medium sm:text-5xl ">
-                                Transform your Sales with Data-Driven Insights
+                                Are You Overpaying for a Website That Doesn't Work?
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance text-lg">
-                                Efficiently manage your sales team with our innovative tools. Enhance productivity, and
-                                achieve your sales!
+                                Most businesses are trapped in expensive contracts for outdated, underperforming websites. See the side-by-side comparison that proves there’s a smarter way to grow.
+
                             </p>
 
                         </div>
@@ -130,31 +150,20 @@ export default function PricingComparator() {
                                 <tr className="*:py-4 *:text-left *:font-medium">
                                     <th className="lg:w-2/5"></th>
                                     <th className="space-y-3">
-                                        <span className="block">Free</span>
+                                        <span className="block">DIY/In-House Development	</span>
 
-                                        <Button
-                                            asChild
-                                            variant="outline"
-                                            size="sm">
-                                            <Link href="#">Get Started</Link>
-                                        </Button>
+
                                     </th>
-                                    <th className="bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] text-white rounded-t-(--radius) space-y-3 px-4">
-                                        <span className="block">Pro</span>
-                                        <Button
-                                            asChild
-                                            size="sm">
-                                            <Link href="#">Get Started</Link>
-                                        </Button>
+                                    <th className="bg-gradient-to-r text-center   from-[#6C00FF]  to-[#9e58ff] text-white rounded-t-(--radius) space-y-1 px-4">
+                                        <div aria-label="home" className="flex justify-center  items-center space-x-2" href="/">
+                                            <Logo className={'w-8 h-8 p-0.5 bg-white border shadow rounded-lg  '}></Logo>
+                                        </div>
+                                        <p className=' text-center '>SuperWorld Technologies	</p>
+
                                     </th>
                                     <th className="space-y-3">
-                                        <span className="block">Startup</span>
-                                        <Button
-                                            asChild
-                                            variant="outline"
-                                            size="sm">
-                                            <Link href="#">Get Started</Link>
-                                        </Button>
+                                        <span className="block">SaaS Platforms </span>
+
                                     </th>
                                 </tr>
                             </thead>
@@ -162,79 +171,10 @@ export default function PricingComparator() {
                                 <tr className="*:py-3">
                                     <td className="flex items-center gap-2 font-medium">
                                         <Cpu className="size-4" />
-                                        <span>Features</span>
+                                        <span>Factor</span>
                                     </td>
                                     <td></td>
                                     <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] text-white "></td>
-                                    <td></td>
-                                </tr>
-                                {tableData.slice(-4).map((row, index) => (
-                                    <tr
-                                        key={index}
-                                        className="*:border-b *:py-3">
-                                        <td className="text-muted-foreground">{row.feature}</td>
-                                        <td>
-                                            {row.free === true ? (
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 24 24"
-                                                    fill="currentColor"
-                                                    className="size-4">
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                                                        clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                            ) : (
-                                                row.free
-                                            )}
-                                        </td>
-                                        <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] text-white">
-                                            <div className="-mb-3 border-b py-3">
-                                                {row.pro === true ? (
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 24 24"
-                                                        fill="currentColor"
-                                                        className="size-4">
-                                                        <path
-                                                            fillRule="evenodd"
-                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                                                            clipRule="evenodd"
-                                                        />
-                                                    </svg>
-                                                ) : (
-                                                    row.pro
-                                                )}
-                                            </div>
-                                        </td>
-                                        <td>
-                                            {row.startup === true ? (
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 24 24"
-                                                    fill="currentColor"
-                                                    className="size-4">
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                                                        clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                            ) : (
-                                                row.startup
-                                            )}
-                                        </td>
-                                    </tr>
-                                ))}
-                                <tr className="*:pb-3 *:pt-8">
-                                    <td className="flex items-center gap-2 font-medium">
-                                        <Sparkles className="size-4" />
-                                        <span>AI Models</span>
-                                    </td>
-                                    <td></td>
-                                    <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] text-white"></td>
                                     <td></td>
                                 </tr>
                                 {tableData.map((row, index) => (
@@ -243,7 +183,7 @@ export default function PricingComparator() {
                                         className="*:border-b *:py-3">
                                         <td className="text-muted-foreground">{row.feature}</td>
                                         <td>
-                                            {row.free === true ? (
+                                            {row.diy_in_house === true ? (
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 24 24"
@@ -256,12 +196,12 @@ export default function PricingComparator() {
                                                     />
                                                 </svg>
                                             ) : (
-                                                row.free
+                                                row.diy_in_house
                                             )}
                                         </td>
                                         <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] text-white">
                                             <div className="-mb-3 border-b py-3">
-                                                {row.pro === true ? (
+                                                {row.superworld === true ? (
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 24 24"
@@ -274,12 +214,12 @@ export default function PricingComparator() {
                                                         />
                                                     </svg>
                                                 ) : (
-                                                    row.pro
+                                                    row.superworld
                                                 )}
                                             </div>
                                         </td>
                                         <td>
-                                            {row.startup === true ? (
+                                            {row.other_saas === true ? (
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 24 24"
@@ -292,11 +232,12 @@ export default function PricingComparator() {
                                                     />
                                                 </svg>
                                             ) : (
-                                                row.startup
+                                                row.other_saas
                                             )}
                                         </td>
                                     </tr>
                                 ))}
+
                                 <tr className="*:py-6">
                                     <td></td>
                                     <td></td>
@@ -307,7 +248,7 @@ export default function PricingComparator() {
                         </table>
                     </div>
                 </div>
-                 
+
             </section>
         </>
     )
