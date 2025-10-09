@@ -1,14 +1,12 @@
-/** next.config.js **/
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com"], // ✅ allow Cloudinary images
   },
   serverActions: {
     bodySizeLimit: "1mb",
   },
-  // Only enable standalone when DISABLE_STANDALONE is not set.
-  ...(process.env.DISABLE_STANDALONE ? {} : { output: "standalone" }),
+  output: "standalone", // optional, but good for deployment
 };
 
 export default nextConfig;
