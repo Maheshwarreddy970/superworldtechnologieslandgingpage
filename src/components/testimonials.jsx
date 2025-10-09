@@ -60,7 +60,7 @@ const testimonialsData = [
 
 export default function Testimonials() {
   return (
-    <section className=" ">
+    <section className="px-3 ">
       <div className="grid grid-cols-1 relative md:grid-cols-3 max-w-6xl mx-auto border-x">
         <div
           aria-hidden="true"
@@ -74,7 +74,7 @@ export default function Testimonials() {
           <div
             key={testimonial.id}
             className={`${
-              index % 2 === 0 ? 'shadow-xl bg-white' : 'bg-card/25'
+              index % 2 === 0 ?  'bg-card/25' :'shadow-xl bg-white' 
             } ring-foreground/[0.07] flex flex-col justify-end gap-6 border border-transparent p-8 ring-1`}
           >
             <p className="text-foreground self-end text-balance before:mr-1 before:content-['\201C'] after:ml-1 after:content-['\201D']">

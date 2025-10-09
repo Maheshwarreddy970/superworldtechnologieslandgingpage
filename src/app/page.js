@@ -16,7 +16,7 @@ export default function Home() {
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
       <ComparatorSection></ComparatorSection>
-      <PricingSection></PricingSection>
+    <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>
       <FAQSection></FAQSection>

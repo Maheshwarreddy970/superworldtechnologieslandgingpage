@@ -1,13 +1,12 @@
 'use client';
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section id="home">
+    <section id="home over-flow-hidden">
       <div className="relative mx-auto max-w-6xl  px-3 pb-10 pt-24 md:pb-20 md:pt-36">
         <div>
           <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
@@ -28,13 +27,13 @@ const HeroSection = () => {
               className="absolute bottom-1 right-1 size-[3px] rounded-full bg-gray-950/20"
             />
             <div className="relative flex h-fit items-center gap-2 rounded-full bg-white px-3 py-1 shadow">
-              <span className="text-title text-sm">superworldtechnologies raises 500K seed round</span>
+              <span className="text-title text-xs lg:text-sm">Introducing AI Engine v3.0</span>
               
             </div>
           </div>
         </div>
         <div className="mx-auto mt-8 max-w-4xl text-center md:mt-10">
-          <h1 className="text-foreground text-balance text-4xl font-semibold sm:text-6xl">
+          <h1 className="text-foreground text-balance text-3xl font-semibold sm:text-6xl">
             If Your Website Isn't Your #1 Source of Leads, It's Broken. We Build {' '}
             <span className="relative ">
               <svg
@@ -67,7 +66,7 @@ const HeroSection = () => {
             </span>
            {' '} Ones.
           </h1>
-          <p className="text-muted-foreground mx-auto mb-8 mt-4 max-w-3xl text-balance text-lg">
+          <p className="text-muted-foreground mx-auto mb-8 mt-4 max-w-3xl text-balance text-base md:text-lg">
            Don't let a slow, outdated, or confusing website be the bottleneck in your growth. We engineer mobile-first, AI-driven platforms that are built for one purpose: to convert your visitors into paying customers. Guaranteed.
           </p>
           <div className="flex items-center justify-center gap-4">
@@ -77,7 +76,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="border-b  border-t">
+      <div className="border-b px-3  border-t">
         <div className="relative mx-auto max-w-6xl border-x  px-4 sm:px-6 md:px-12">
           <div
             aria-hidden="true"

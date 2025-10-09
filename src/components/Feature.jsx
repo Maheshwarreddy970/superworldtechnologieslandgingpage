@@ -13,7 +13,7 @@ import { IconAi } from '@tabler/icons-react';
 const FeaturesSection = () => {
     return (
         <>
-            <div className='bg-white w-full '>
+            <div className='bg-white w-full px-3'>
                 <div className="relative  mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
                     <div
                         aria-hidden="true"
@@ -87,7 +87,7 @@ const FeaturesSection = () => {
             </div>
            <section className="bg-white border-t">
             <div className="@container">
-                <div className="mx-auto w-full max-w-6xl px-6 xl:px-0">
+                <div className="mx-auto w-full max-w-6xl px-3 md:px-6 xl:px-0">
                     <div className="relative">
                         <div
                             aria-hidden="true"
@@ -98,14 +98,14 @@ const FeaturesSection = () => {
                             className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-[6px] border border-transparent shadow-sm ring-1 -right-[3.5px] -bottom-[3.5px]"
                         />
 
-                        <div className="*:nth-3:border-r @max-3xl:*:nth-[1n+1]:nth-[-n+6]:border-b @3xl:*:nth-6:border-r @3xl:*:nth-[1n+3]:nth-[-n+4]:border-r @3xl:*:nth-[1n+1]:nth-[-n+5]:border-b border-foreground/10 divide-foreground/10 @3xl:grid-cols-4 @3xl:*:first:border-r relative grid grid-cols-2 overflow-hidden border border-b-0 *:p-8">
+                        <div className="*:nth-3:border-r @max-3xl:*:nth-[1n+1]:nth-[-n+6]:border-b @3xl:*:nth-6:border-r @3xl:*:nth-[1n+3]:nth-[-n+4]:border-r @3xl:*:nth-[1n+1]:nth-[-n+5]:border-b border-foreground/10 divide-foreground/10 @lg:grid-cols-4 @3xl:*:first:border-r relative grid grid-cols-2 overflow-hidden border border-b-0 *:p-8">
                             
  {/* Get a Modern Website—Free & Fully Managed */}
-                            <div className="@3xl:col-span-4 @3xl:grid-cols-2 bg-white gap-8 border-b grid grid-cols-2">
-                                <div className="col-span-2 text-center mb-4">
+                            <div className="col-span-2 @lg:col-span-4 grid-cols-2  bg-white gap-8 border-b grid ">
+                                <div className=" col-span-2  text-center mb-4">
                                     <h3 className="text-balance font-semibold text-2xl">Get a Modern Website—Free & Fully Managed</h3>
                                 </div>
-                                <div className="flex flex-col gap-2">
+                                <div className="flex flex-col items-center lg:items-start gap-2 col-span-2 lg:col-span-1">
                                     <div aria-hidden="true" className="group">
                                         <div className="flex items-center gap-1.5 px-6 py-2.5 text-sm rounded-xl font-medium">We handle every technical detail for you:</div>
                                         <div className="relative">
@@ -180,7 +180,7 @@ const FeaturesSection = () => {
                             <ChatSupportSection />
 
                             {/* Mobile-First Optimization */}
-                            <div className="col-span-2 bg-white border-r flex flex-col gap-4 p-8">
+                            <div className="lg:col-span-2 col-span-4 bg-white border-r flex flex-col gap-4 p-8">
                                 <div className="mx-auto max-w-sm text-center">
                                     <h3 className="text-balance font-semibold">Mobile-First Optimization</h3>
                                     <p className="text-muted-foreground mt-1">
@@ -199,7 +199,7 @@ const FeaturesSection = () => {
                             </div>
 
                             {/* Instant Booking & Reservations */}
-                            <div className="col-span-2 bg-white border-r flex flex-col gap-4 p-8">
+                            <div className="lg:col-span-2 col-span-4 bg-white border-r flex flex-col gap-4 p-8">
                                 <div className="mx-auto max-w-sm text-center">
                                     <h3 className="text-balance font-semibold">Instant Booking & Reservations</h3>
                                     <p className="text-muted-foreground mt-1">
@@ -221,7 +221,7 @@ const FeaturesSection = () => {
                             {/* Lead & ROI Dashboard */}
                             <div className="col-span-4">
                                 <div className="w-full grid grid-cols-5">
-                                    <div className="flex flex-col gap-5 justify-center col-span-3">
+                                    <div className="flex flex-col order-last gap-5 justify-center col-span-5 lg:col-span-3">
                                         <div>
                                             <h3 className="text-balance font-semibold">Lead & ROI Dashboard</h3>
                                             <p className="text-muted-foreground text-sm mt-1">
@@ -241,7 +241,7 @@ const FeaturesSection = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="mask-b-from-75% col-span-2 mask-b-to-95% mask-r-from-85% relative h-fit perspective-distant p-6">
+                                    <div className="mask-b-from-75% order-1 col-span-5 lg:col-span-2 mask-b-to-95% mask-r-from-85% relative h-fit perspective-distant p-6">
                                         <div className="bg-black/5 shadow-md overflow-hidden rounded-t-lg rotate-x-20 skew-x-12 border-t px-2 pt-2 dark:bg-zinc-950">
                                             <Image
                                                 src="/Dashboard Design(1).jpg"
@@ -267,8 +267,8 @@ export default FeaturesSection;
 
 const ChatSupportSection = () => {
     return (
-        <div className="@3xl:col-span-5 @3xl:grid-cols-2 border-b grid gap-5">
-            <div>
+        <div className="@lg:col-span-4 grid-cols-2 border-b grid gap-5">
+            <div className=' col-span-2 lg:col-span-1'>
                 <h3 className="text-balance font-semibold">24/7 AI Sales Assistant</h3>
                 <p className="text-muted-foreground mt-3">
                     An always-on, intelligent chatbot that instantly answers questions, qualifies leads, recommends products/services, and can even help schedule appointments—anytime, day or night.
@@ -280,7 +280,7 @@ const ChatSupportSection = () => {
                     </p>
                 </div>
             </div>
-            <div aria-hidden="true" className="flex flex-col gap-6">
+            <div aria-hidden="true" className="flex flex-col gap-6 col-span-2 lg:col-span-1">
                 <div>
                     <div className="flex items-center gap-2">
                         <span className="text-muted-foreground text-xs">Sat 22 Feb</span>
@@ -302,8 +302,8 @@ const ChatSupportSection = () => {
                         <div className="absolute inset-0 scale-100 opacity-100 blur-lg transition-all duration-300">
                             <div className="bg-linear-to-r/increasing animate-hue-rotate absolute inset-x-6 bottom-0 top-12 -translate-y-3 from-pink-400 to-purple-400"></div>
                         </div>
-                        <div className="bg-card ring-foreground/10 grid grid-cols-4 gap-4 relative overflow-hidden rounded-2xl border border-transparent px-6 py-3 shadow-md shadow-black/5 ring-1">
-                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-r border-dashed last:border-b-0">
+                        <div className="bg-card ring-foreground/10 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-4 relative overflow-hidden rounded-2xl border border-transparent px-6 py-3 shadow-md shadow-black/5 ring-1">
+                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-b md:border-b-0 md:border-r border-dashed last:border-b-0">
                                 <div className="space-y-0.5">
                                     <h3 className="text-sm font-medium text-center">AI Visual Search</h3>
                                     <p className="text-muted-foreground text-center text-xs">
@@ -311,7 +311,7 @@ const ChatSupportSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-r border-dashed last:border-b-0">
+                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-b md:border-b-0 border-dashed md:border-r-0 lg:border-r last:border-b-0">
                                 <div className="space-y-0.5">
                                     <h3 className="text-sm font-medium text-center">AI Smart Recommendations</h3>
                                     <p className="text-muted-foreground text-center text-xs">
@@ -319,7 +319,7 @@ const ChatSupportSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-r border-dashed last:border-b-0">
+                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-b md:border-b-0 md:border-r border-dashed  last:border-b-0">
                                 <div className="space-y-0.5">
                                     <h3 className="text-sm font-medium text-center">Automated Follow-Ups</h3>
                                     <p className="text-muted-foreground text-center text-xs">
@@ -327,7 +327,7 @@ const ChatSupportSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-dashed last:border-b-0">
+                            <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 border-b md:border-b-0 md:border-dashed last:border-b-0">
                                 <div className="space-y-0.5">
                                     <h3 className="text-sm font-medium text-center">Real-Time Customer Insights</h3>
                                     <p className="text-muted-foreground text-center text-xs">

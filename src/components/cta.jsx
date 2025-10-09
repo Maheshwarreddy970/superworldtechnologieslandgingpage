@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CTA = () => {
   return (
-    <section className="  ">
+    <section className=" px-3 ">
       <div className="mx-auto relative  max-w-6xl py-24 md:py-32   px-6">
           
         <div className="grid grid-cols-6 gap-4 sm:grid-cols-8">

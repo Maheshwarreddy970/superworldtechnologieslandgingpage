@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function PricingWithChart() {
     return (
         <>
-            <div className='bg-white w-full '>
+            <div className='bg-white w-full px-3'>
                 <div className="relative   mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
 
                     <div
@@ -84,7 +84,7 @@ Pricing That Powers Your Growth
                     </div>
                 </div>
             </div>
-            <div className="mx-auto max-w-6xl relative">
+            <div className="lg:mx-auto max-w-6xl relative mx-3 ">
                 <div
                     aria-hidden="true"
                     className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px]  translate-x-[1.5px]   -left-[3.5px]"

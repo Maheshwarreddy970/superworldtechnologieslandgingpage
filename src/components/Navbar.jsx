@@ -11,55 +11,96 @@ import {
     navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { Button } from '@/components/ui/button';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-import {Logo} from './logo';
+import { Logo } from './logo';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className='border-b fixed top-0 z-50  w-full bg-white backdrop-blur-3xl transition-shadow duration-200 '>
-            <div className="mx-auto  max-w-6xl  px-6 lg:px-0">
-                <div className="relative flex flex-wrap items-center justify-between lg:py-5">
-                    <div className="flex justify-between gap-8 max-lg:h-14 max-lg:w-full max-lg:border-b">
-                        <Link aria-label="home" className="flex items-center space-x-2" href="/">
-                            <Logo className={'w-12 h-12 p-1 border shadow rounded-lg  '}></Logo>
+        <header className="fixed top-0 z-50 w-full bg-white/95 border-b backdrop-blur-xl transition-shadow duration-200">
+            <div className="mx-auto max-w-6xl px-4  lg:px-12">
+                <div className="flex items-center justify-between py-4">
+                    {/* Logo and Mobile Menu Trigger */}
+                    <div className="flex items-center justify-between w-full lg:w-[25%] gap-4">
+                        <Link aria-label="Home" href="/" className="flex items-center">
+                            <Logo className="h-11 w-11 p-1 border shadow rounded-lg" />
                         </Link>
-                        <NavigationMenuDemo></NavigationMenuDemo>
-                        <DropdownMenu open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-                            <DropdownMenuTrigger asChild className="lg:hidden">
-                                <Button variant="ghost" size="icon" aria-label="Open Menu">
-                                    {isMobileMenuOpen ? (
-                                        <X className="h-5 w-5 transition-transform duration-200" />
-                                    ) : (
-                                        <Menu className="h-5 w-5 transition-transform duration-200" />
-                                    )}
-                                </Button>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" className="w-48">
-                                <DropdownMenuItem asChild>
-                                    <Link href="#">Product</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href="#">Solutions</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href="#">Pricing</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href="#">Company</Link>
-                                </DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                        <button
+                            variant="ghost"
+                            size="icon"
+                            aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
+                            className="lg:hidden"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            {isMobileMenuOpen ? (
+                                <X className="h-6 w-6 transition-transform duration-200" />
+                            ) : (
+                                <Menu className="h-6 w-6 transition-transform duration-200" />
+                            )}
+                        </button>
                     </div>
-                    <div className="max-lg:data-[state=open]:mt-6 max-lg:data-[state=open]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-                        <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                <span>Primary</span>
-                            </button>
 
+                    {/* Desktop Navigation */}
+                    <div className="hidden w-[75%] justify-between  lg:flex items-center gap-4">
+                        <NavigationMenuDemo />
+                        <div className="flex gap-3">
+                            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                                <span>Get Started</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Mobile Menu */}
+                <div
+                    className={`lg:hidden fixed inset-x-0 top-[4.7rem] bg-white/95 backdrop-blur-xl border-b  transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                        }`}
+                >
+                    <div className="mx-auto max-w-6xl px-4 py-4">
+                        <Accordion type="single" collapsible className="w-full space-y-1">
+                            <AccordionItem value="product" className="border-b-0">
+                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
+                                    Product
+                                </AccordionTrigger>
+                                <AccordionContent className="px-4 py-2 text-sm">
+                                    <Link href="#" className="block py-2">Overview</Link>
+                                    <Link href="#" className="block py-2">Features</Link>
+                                    <Link href="#" className="block py-2">Benefits</Link>
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="solutions" className="border-b-0">
+                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
+                                    Solutions
+                                </AccordionTrigger>
+                                <AccordionContent className="px-4 py-2 text-sm">
+                                    <Link href="#" className="block py-2">For Teams</Link>
+                                    <Link href="#" className="block py-2">For Enterprises</Link>
+                                    <Link href="#" className="block py-2">Case Studies</Link>
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="pricing" className="border-b-0">
+                                <Link href="#" className="block py-3 text-lg font-medium hover:underline">
+                                    Pricing
+                                </Link>
+                            </AccordionItem>
+                            <AccordionItem value="company" className="border-b-0">
+                                <Link href="#" className="block py-3 text-lg font-medium hover:underline">
+                                    Company
+                                </Link>
+                            </AccordionItem>
+                        </Accordion>
+                        <div className="my-4 flex flex-col gap-3 ">
+
+                            <Button
+                                size="sm"
+                                asChild
+                                className=" bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md border-white/25 ring-1 ring-inset ring-white/15 hover:bg-primary/90"
+                            >
+                                <Link href="#">Get Started</Link>
+                            </Button>
                         </div>
                     </div>
                 </div>
@@ -68,65 +109,55 @@ const Header = () => {
     );
 };
 
-export default Header;
-
-
 const components = [
     {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
+        title: 'Alert Dialog',
+        href: '/docs/primitives/alert-dialog',
+        description: 'A modal dialog that interrupts the user with important content and expects a response.',
     },
     {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
+        title: 'Hover Card',
+        href: '/docs/primitives/hover-card',
+        description: 'For sighted users to preview content available behind a link.',
     },
     {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        title: 'Progress',
+        href: '/docs/primitives/progress',
+        description: 'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
     },
     {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
+        title: 'Scroll-area',
+        href: '/docs/primitives/scroll-area',
+        description: 'Visually or semantically separates content.',
     },
     {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        title: 'Tabs',
+        href: '/docs/primitives/tabs',
+        description: 'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
     },
     {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        title: 'Tooltip',
+        href: '/docs/primitives/tooltip',
+        description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
     },
 ];
 
 function NavigationMenuDemo() {
     return (
-        <NavigationMenu viewport={false}>
-            <NavigationMenuList>
+        <NavigationMenu>
+            <NavigationMenuList className="flex gap-2">
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Home</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                        <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <a
-                                        className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
+                                        className="flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
-                                        <div className="mt-4 mb-2 text-lg font-medium">
-                                            shadcn/ui
-                                        </div>
-                                        <p className="text-muted-foreground text-sm leading-tight">
+                                        <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
+                                        <p className="text-sm leading-tight text-muted-foreground">
                                             Beautifully designed components built with Tailwind CSS.
                                         </p>
                                     </a>
@@ -147,13 +178,9 @@ function NavigationMenuDemo() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Components</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                             {components.map((component) => (
-                                <ListItem
-                                    key={component.title}
-                                    title={component.title}
-                                    href={component.href}
-                                >
+                                <ListItem key={component.title} title={component.title} href={component.href}>
                                     {component.description}
                                 </ListItem>
                             ))}
@@ -168,71 +195,52 @@ function NavigationMenuDemo() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>List</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[300px] gap-4">
-                            <li>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">
-                                        <div className="font-medium">Components</div>
-                                        <div className="text-muted-foreground">
-                                            Browse all components in the library.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">
-                                        <div className="font-medium">Documentation</div>
-                                        <div className="text-muted-foreground">
-                                            Learn how to use the library.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">
-                                        <div className="font-medium">Blog</div>
-                                        <div className="text-muted-foreground">
-                                            Read our latest blog posts.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                            </li>
+                        <ul className="grid w-[300px] gap-3 p-4">
+                            <ListItem href="#" title="Components">
+                                Browse all components in the library.
+                            </ListItem>
+                            <ListItem href="#" title="Documentation">
+                                Learn how to use the library.
+                            </ListItem>
+                            <ListItem href="#" title="Blog">
+                                Read our latest blog posts.
+                            </ListItem>
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-4">
-                            <li>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">Components</Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">Documentation</Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link href="#">Blocks</Link>
-                                </NavigationMenuLink>
-                            </li>
+                        <ul className="grid w-[200px] gap-3 p-4">
+                            <ListItem href="#" title="Components" />
+                            <ListItem href="#" title="Documentation" />
+                            <ListItem href="#" title="Blocks" />
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-
             </NavigationMenuList>
         </NavigationMenu>
     );
 }
 
-function ListItem({ title, children, href, ...props }) {
+function ListItem({ title, children, href }) {
     return (
-        <li {...props}>
+        <li>
             <NavigationMenuLink asChild>
-                <Link href={href}>
-                    <div className="text-sm leading-none font-medium">{title}</div>
-                    <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                        {children}
-                    </p>
+                <Link
+                    href={href}
+                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                    <div className="text-sm font-medium leading-none">{title}</div>
+                    {children && (
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {children}
+                        </p>
+                    )}
                 </Link>
             </NavigationMenuLink>
         </li>
     );
 }
+
+export default Header;

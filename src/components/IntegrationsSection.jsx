@@ -22,8 +22,8 @@ const logos = [
 
 export default function IntegrationsSection() {
     return (
-        <section className="border-y">
-            <div className="mx-auto relative max-w-6xl border-x py-24 md:py-32">
+        <section className="border-y overflow-hidden px-3">
+            <div className="mx-auto relative  max-w-6xl border-x py-24 md:py-32">
                   <div
                     aria-hidden="true"
                     className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px]  translate-x-[1.5px]   -left-[3.5px]"

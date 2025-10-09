@@ -70,20 +70,14 @@ const tableData = [
 export default function PricingComparator() {
     return (
         <>
-            <div className='bg-white border-t w-full '>
+            <div className='bg-white border-t w-full px-3 '>
                 <div className="relative  mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
-                    <div
-                        aria-hidden="true"
-                        className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -left-[3.5px] -top-[3.5px]"
-                    />
+                   
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] left-3 translate-x-[1.5px] sm:left-5 md:left-11"
                     />
-                    <div
-                        aria-hidden="true"
-                        className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -right-[3.5px] -top-[3.5px]"
-                    />
+                 
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] right-3 -translate-x-[1.5px] sm:right-5 md:right-11"
@@ -142,8 +136,8 @@ export default function PricingComparator() {
                     </div>
                 </div>
             </div>
-            <section className=" border-y  ">
-                <div className="  relative mx-auto max-w-6xl py-16 border-x px-6">
+            <section className=" border-y px-3 ">
+                <div className="  relative mx-auto max-w-6xl py-16 border-x  px-6">
                     <div className="w-full overflow-auto lg:overflow-visible">
                         <table className="w-[200vw] border-separate border-spacing-x-3 md:w-full dark:[--color-muted:var(--color-zinc-900)]">
                             <thead className="bg-background sticky top-0">
