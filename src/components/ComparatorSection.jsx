@@ -70,7 +70,7 @@ const tableData = [
 export default function PricingComparator() {
     return (
         <>
-            <div className='bg-white border-t w-full px-3 '>
+            <div id='competition' className='bg-white border-t w-full px-3 '>
                 <div className="relative  mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
                    
                     <div

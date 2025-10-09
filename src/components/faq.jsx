@@ -57,7 +57,7 @@ const faqData = [
 
 const FAQSection = () => {
   return (
-    <section className="border-y px-3">
+    <section id='faq' className="border-y px-3">
       <div className="mx-auto py-16 relative md:py-24 max-w-6xl border-x px-4 md:px-6">
         <div
           aria-hidden="true"

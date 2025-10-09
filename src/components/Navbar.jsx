@@ -15,13 +15,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from './logo';
+import { ChevronRight } from 'lucide-react';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
         <header className="fixed top-0 z-50 w-full bg-white/95 border-b backdrop-blur-xl transition-shadow duration-200">
-            <div className="mx-auto max-w-6xl px-4  lg:px-12">
+            <div className="mx-auto max-w-6xl px-4 lg:px-12">
                 <div className="flex items-center justify-between py-4">
                     {/* Logo and Mobile Menu Trigger */}
                     <div className="flex items-center justify-between w-full lg:w-[25%] gap-4">
@@ -44,62 +45,64 @@ const Header = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden w-[75%] justify-between  lg:flex items-center gap-4">
+                    <div className="hidden w-[75%] justify-between lg:flex items-center gap-4">
                         <NavigationMenuDemo />
                         <div className="flex gap-3">
-                            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                <span>Get Started</span>
-                            </button>
+                            <a href='/getstarted' className=" inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                                <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 {/* Mobile Menu */}
                 <div
-                    className={`lg:hidden fixed inset-x-0 top-[4.7rem] bg-white/95 backdrop-blur-xl border-b  transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
-                        }`}
+                    className={`lg:hidden fixed inset-x-0 top-[4.7rem] bg-white/95 backdrop-blur-xl border-b transition-all duration-300 ease-in-out ${
+                        isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                    }`}
                 >
                     <div className="mx-auto max-w-6xl px-4 py-4">
                         <Accordion type="single" collapsible className="w-full space-y-1">
-                            <AccordionItem value="product" className="border-b-0">
-                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
-                                    Product
-                                </AccordionTrigger>
-                                <AccordionContent className="px-4 py-2 text-sm">
-                                    <Link href="#" className="block py-2">Overview</Link>
-                                    <Link href="#" className="block py-2">Features</Link>
-                                    <Link href="#" className="block py-2">Benefits</Link>
-                                </AccordionContent>
+                            <AccordionItem value="home" className="border-b-0">
+                                <Link href="/" className="block py-3 text-lg font-medium hover:underline">
+                                    Home
+                                </Link>
                             </AccordionItem>
-                            <AccordionItem value="solutions" className="border-b-0">
-                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
-                                    Solutions
-                                </AccordionTrigger>
-                                <AccordionContent className="px-4 py-2 text-sm">
-                                    <Link href="#" className="block py-2">For Teams</Link>
-                                    <Link href="#" className="block py-2">For Enterprises</Link>
-                                    <Link href="#" className="block py-2">Case Studies</Link>
-                                </AccordionContent>
+                            <AccordionItem value="features" className="border-b-0">
+                                <Link href="#features" className="block py-3 text-lg font-medium hover:underline">
+                                    Features
+                                </Link>
                             </AccordionItem>
                             <AccordionItem value="pricing" className="border-b-0">
-                                <Link href="#" className="block py-3 text-lg font-medium hover:underline">
+                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
                                     Pricing
-                                </Link>
+                                </AccordionTrigger>
+                                <AccordionContent className="px-4 py-2 text-sm">
+                                    <Link href="#competition" className="block py-2">Competition</Link>
+                                    <Link href="#pricing" className="block py-2">Pricing</Link>
+                                    <Link href="#faq" className="block py-2">FAQ</Link>
+                                </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="company" className="border-b-0">
-                                <Link href="#" className="block py-3 text-lg font-medium hover:underline">
-                                    Company
-                                </Link>
+                            <AccordionItem value="components" className="border-b-0">
+                                <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
+                                    Components
+                                </AccordionTrigger>
+                                <AccordionContent className="px-4 py-2 text-sm">
+                                    {components.map((component) => (
+                                        <Link key={component.title} href={component.href} className="block py-2">
+                                            {component.title}
+                                        </Link>
+                                    ))}
+                                </AccordionContent>
                             </AccordionItem>
                         </Accordion>
-                        <div className="my-4 flex flex-col gap-3 ">
-
+                        <div className="my-4 flex flex-col gap-3">
                             <Button
                                 size="sm"
                                 asChild
-                                className=" bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md border-white/25 ring-1 ring-inset ring-white/15 hover:bg-primary/90"
+                                className="bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md border-white/25 ring-1 ring-inset ring-white/15 hover:bg-primary/90"
                             >
-                                <Link href="#">Get Started</Link>
+                                <Link href="/getstarted">Get Started</Link>
                             </Button>
                         </div>
                     </div>
@@ -111,34 +114,34 @@ const Header = () => {
 
 const components = [
     {
-        title: 'Alert Dialog',
-        href: '/docs/primitives/alert-dialog',
-        description: 'A modal dialog that interrupts the user with important content and expects a response.',
+        title: 'For Real Estate',
+        href: '/request-demo',
+        description: 'Professional property listings, MLS integration, lead capture forms, and conversion-optimized design that builds trust with buyers.',
     },
     {
-        title: 'Hover Card',
-        href: '/docs/primitives/hover-card',
-        description: 'For sighted users to preview content available behind a link.',
+        title: 'For Waste Management',
+        href: '/request-demo',
+        description: 'Service request forms, route scheduling, customer portals, secure invoicing, and mobile-optimized booking for all waste services.',
     },
     {
-        title: 'Progress',
-        href: '/docs/primitives/progress',
-        description: 'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+        title: 'For Car Dealerships',
+        href: '/request-demo',
+        description: 'Stunning inventory showcases, finance application forms, test drive booking, trade-in calculators, and high-converting sales pages.',
     },
     {
-        title: 'Scroll-area',
-        href: '/docs/primitives/scroll-area',
-        description: 'Visually or semantically separates content.',
+        title: 'For Home Services',
+        href: '/request-demo',
+        description: 'Service area mapping, instant quote forms, before/after galleries, customer testimonials, and appointment scheduling that converts.',
     },
     {
-        title: 'Tabs',
-        href: '/docs/primitives/tabs',
-        description: 'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+        title: 'For Healthcare',
+        href: '/request-demo',
+        description: 'HIPAA-compliant patient forms, appointment booking, insurance verification, telehealth integration, and professional medical design.',
     },
     {
-        title: 'Tooltip',
-        href: '/docs/primitives/tooltip',
-        description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+        title: 'For Restaurants',
+        href: '/request-demo',
+        description: 'Digital menus, online ordering, reservation systems, delivery integration, loyalty programs, and food photography that drives orders.',
     },
 ];
 
@@ -147,30 +150,40 @@ function NavigationMenuDemo() {
         <NavigationMenu>
             <NavigationMenuList className="flex gap-2">
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="/">Home</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="#features">Features</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
-                                <NavigationMenuLink asChild>
+                                <NavigationMenuLink className="[&_svg:not([class*='size-'])]:size-full " asChild>
                                     <a
-                                        className="flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                        className="flex h-full w-full border relative flex-col justify-end rounded-md bg-white "
                                         href="/"
                                     >
-                                        <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
+                                        <Logo className="h-full w-full " />
                                         <p className="text-sm leading-tight text-muted-foreground">
-                                            Beautifully designed components built with Tailwind CSS.
+                                            Beautifully designed websites crafted for your industry with conversion-focused layouts.
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/docs" title="Introduction">
-                                Re-usable components built using Radix UI and Tailwind CSS.
+                            <ListItem href="#competition" title="Competition">
+                                Compare SuperWorld Technologies with DIY solutions and other SaaS platforms.
                             </ListItem>
-                            <ListItem href="/docs/installation" title="Installation">
-                                How to install dependencies and structure your app.
+                            <ListItem href="#pricing" title="Pricing">
+                                Simple, transparent plans that scale with your business growth.
                             </ListItem>
-                            <ListItem href="/docs/primitives/typography" title="Typography">
-                                Styles for headings, paragraphs, lists...etc
+                            <ListItem href="#faq" title="FAQ">
+                                Common questions about setup, billing, features, and support.
                             </ListItem>
                         </ul>
                     </NavigationMenuContent>
@@ -184,37 +197,6 @@ function NavigationMenuDemo() {
                                     {component.description}
                                 </ListItem>
                             ))}
-                        </ul>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/docs">Docs</Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>List</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid w-[300px] gap-3 p-4">
-                            <ListItem href="#" title="Components">
-                                Browse all components in the library.
-                            </ListItem>
-                            <ListItem href="#" title="Documentation">
-                                Learn how to use the library.
-                            </ListItem>
-                            <ListItem href="#" title="Blog">
-                                Read our latest blog posts.
-                            </ListItem>
-                        </ul>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-3 p-4">
-                            <ListItem href="#" title="Components" />
-                            <ListItem href="#" title="Documentation" />
-                            <ListItem href="#" title="Blocks" />
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>

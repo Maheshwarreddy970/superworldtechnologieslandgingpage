@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -5,13 +6,13 @@ const CTA = () => {
   return (
     <section className=" px-3 ">
       <div className="mx-auto relative  max-w-6xl py-24 md:py-32   px-6">
-          
+
         <div className="grid grid-cols-6 gap-4 sm:grid-cols-8">
           {/* Text and CTA */}
           <div className="col-span-6 max-md:pb-6 sm:col-span-5 md:col-span-4 md:pt-6">
             <h1 className="text-foreground text-balance text-5xl font-semibold sm:text-6xl">
-              Modern Solutions for Your 
-{' '}
+              Modern Solutions for Your
+              {' '}
               <span className="relative ">
                 <svg
                   aria-hidden="true"
@@ -43,10 +44,10 @@ const CTA = () => {
               </span>
             </h1>
             <p className="text-gray-600 mb-6 mt-4 text-balance text-lg">
-Join Us Today to Streamline Operations and Drive Success with Cutting-Edge Technology.
+              Join Us Today to Streamline Operations and Drive Success with Cutting-Edge Technology.
             </p>
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-              <Link href="#">Start Building</Link>
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+              <span>Request Demo</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
             </button>
           </div>
 

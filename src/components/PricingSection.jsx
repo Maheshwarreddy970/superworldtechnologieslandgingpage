@@ -4,13 +4,14 @@ import { Button } from '@/components/ui/button';
 import { CheckCircleIcon } from 'lucide-react';
 import { AnimatedCard, CardBody, CardDescription, CardTitle, CardVisual, Visual1 } from './ui/chat';
 import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
 
 
 export default function PricingWithChart() {
     return (
         <>
-            <div className='bg-white w-full px-3'>
+            <div id='pricing' className='bg-white w-full px-3'>
                 <div className="relative   mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
 
                     <div
@@ -72,7 +73,7 @@ export default function PricingWithChart() {
                         </div>
                         <div className="mx-auto max-w-2xl text-center ">
                             <h1 className="text-foreground text-balance text-4xl font-medium sm:text-5xl ">
-Pricing That Powers Your Growth
+                                Pricing That Powers Your Growth
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance text-lg">
                                 Choose a plan designed to fit your ambition—no surprises, no long-term lock-ins.
@@ -104,13 +105,13 @@ Pricing That Powers Your Growth
                                     $99
                                 </span>
                                 <p className="text-muted-foreground text-sm">
-Ideal for small businesses getting started
+                                    Ideal for small businesses getting started
 
                                 </p>
                             </div>
 
-                            <button className="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                <Link href="#">Start Building</Link>
+                            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                                <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
                             </button>
 
                             <div className="bg-border my-6 h-px w-full" />
@@ -152,9 +153,9 @@ Ideal for small businesses getting started
                                     </CardVisual>
                                     <CardBody>
                                         <CardTitle>Our Community Grew by 234 Businesses This Month
-</CardTitle>
+                                        </CardTitle>
                                         <CardDescription className='text-xs'>
-Smart companies are making the switch to AI-powered websites—see why more businesses choose SuperWorld Technologies every day.
+                                            Smart companies are making the switch to AI-powered websites—see why more businesses choose SuperWorld Technologies every day.
 
                                         </CardDescription>
                                     </CardBody>
@@ -164,7 +165,7 @@ Smart companies are making the switch to AI-powered websites—see why more busi
                         </div>
                         {/* Features */}
                         <div className="relative w-full">
-         
+
                             <ul className="text-muted-foreground mt-4 space-y-3 text-sm">
                                 {[
                                     'AI-Powered Visual Search',
@@ -173,12 +174,12 @@ Smart companies are making the switch to AI-powered websites—see why more busi
                                     'AI-Powered Chatbot',
                                     'Priority Access to New AI Tools',
                                     'Custom AI Workflows & Integrations',
-                                       'Mobile-First Responsive Design',
+                                    'Mobile-First Responsive Design',
                                     'Instant Booking & Reservations',
                                     'Lead Capture & Analytics Dashboard',
                                     'Secure Hosting & Ongoing Maintenance',
                                     '24/7 Customer Support',
-                                   
+
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-[#6C00FF]" />
@@ -189,8 +190,8 @@ Smart companies are making the switch to AI-powered websites—see why more busi
 
                             {/* Call to Action */}
                             <div className="mt-10  w-full ">
-                                <button className="inline-flex w-full  items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                    <Link href="#">Start Building</Link>
+                                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                                    <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
                                 </button>
                             </div>
                         </div>

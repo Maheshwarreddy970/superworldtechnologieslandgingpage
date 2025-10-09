@@ -10,6 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 const logos = [
     RealestateLogo,
@@ -24,14 +25,7 @@ export default function IntegrationsSection() {
     return (
         <section className="border-y overflow-hidden px-3">
             <div className="mx-auto relative  max-w-6xl border-x py-24 md:py-32">
-                  <div
-                    aria-hidden="true"
-                    className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px]  translate-x-[1.5px]   -left-[3.5px]"
-                />
-                <div
-                    aria-hidden="true"
-                    className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px] -right-[3.5px]"
-                />
+
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="bg-muted/25 group relative mx-auto max-w-[22rem] items-center justify-between space-y-6 [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] sm:max-w-md">
                         <div
@@ -81,17 +75,17 @@ export default function IntegrationsSection() {
                     {/* Section bottom text */}
                     <div className="mx-auto mt-12 max-w-lg space-y-6 text-center">
                         <h2 className="text-balance text-3xl font-semibold md:text-4xl">
-Specialized AI Platforms Engineered for Your Market
+                            Specialized AI Platforms Engineered for Your Market
 
- </h2>
+                        </h2>
                         <p className="text-muted-foreground">
-Unlike generic website builders, we create industry-specific solutions because we understand that a restaurant's needs are completely different from a medical clinic's requirements. By treating each industry separately, we deliver features that actually move the needle for your business—not just generic templates.
+                            Unlike generic website builders, we create industry-specific solutions because we understand that a restaurant's needs are completely different from a medical clinic's requirements. By treating each industry separately, we deliver features that actually move the needle for your business—not just generic templates.
 
                         </p>
 
-                        <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 transition-[filter] duration-200 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                            <span>Get Started</span>
-                        </button>
+                         <a href='/requestdemo' className=" hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300  inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+              <span>Request Demo</span>
+            </a>
                     </div>
                 </div>
             </div>

@@ -62,6 +62,14 @@ export default function Testimonials() {
   return (
     <section className="px-3 ">
       <div className="grid grid-cols-1 relative md:grid-cols-3 max-w-6xl mx-auto border-x">
+           <div
+                    aria-hidden="true"
+                    className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px]  translate-x-[1.5px]   -left-[3.5px]"
+                />
+                <div
+                    aria-hidden="true"
+                    className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] -right-[3.5px]"
+                />
         <div
           aria-hidden="true"
           className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px] translate-x-[1.5px] -left-[3.5px]"
