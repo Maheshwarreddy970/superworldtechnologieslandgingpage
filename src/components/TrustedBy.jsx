@@ -26,7 +26,7 @@ const TrustedBySection = () => {
           />
           <img
             className="h-3 sm:h-4 w-auto mx-auto object-contain"
-            src="html.tailus.io/blocks/customers/github.svg"
+            src="https://html.tailus.io/blocks/customers/github.svg"
             alt="GitHub Logo"
             height="16"
             width="auto"
@@ -34,7 +34,7 @@ const TrustedBySection = () => {
           />
           <img
             className="h-5 sm:h-6 w-auto mx-auto object-contain"
-            src="html.tailus.io/blocks/customers/openai.svg"
+            src="https://html.tailus.io/blocks/customers/openai.svg"
             alt="OpenAI Logo"
             height="24"
             width="auto"
@@ -50,7 +50,7 @@ const TrustedBySection = () => {
           />
           <img
             className="h-4 sm:h-5 w-auto mx-auto object-contain"
-            src="html.tailus.io/blocks/customers/vercel.svg"
+            src="https://html.tailus.io/blocks/customers/vercel.svg"
             alt="Vercel Logo"
             height="20"
             width="auto"

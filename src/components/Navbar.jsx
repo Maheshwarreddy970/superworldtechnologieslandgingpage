@@ -42,6 +42,19 @@ const Header = ({ Logotext }) => {
                                 <Logo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
                             ) : null}
                         </Link>
+                         <button
+                            variant="ghost"
+                            size="icon"
+                            aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
+                            className="lg:hidden"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            {isMobileMenuOpen ? (
+                                <X className="h-6 w-6 transition-transform duration-200" />
+                            ) : (
+                                <Menu className="h-6 w-6 transition-transform duration-200" />
+                            )}
+                        </button>
                     </div>
 
                     {/* Desktop Navigation */}
@@ -54,6 +67,8 @@ const Header = ({ Logotext }) => {
                         </div>
                     </div>
                 </div>
+
+
 
                 {/* Mobile Menu */}
                 <div

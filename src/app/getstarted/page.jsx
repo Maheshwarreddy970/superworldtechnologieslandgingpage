@@ -1,5 +1,3 @@
-
-
 import IntegrationsSection from "@/components/IntegrationsSection";
 import GetStartedTab from "./getstarted";
 import Header from "@/components/Navbar";

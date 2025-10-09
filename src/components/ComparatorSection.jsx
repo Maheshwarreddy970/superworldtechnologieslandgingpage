@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Cpu, Sparkles } from 'lucide-react'
+import { Cpu, MoveRight, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import { CarDealerLogo, HealthLogo, HomeserviceLogo, Logo, RealestateLogo, RecycleLogo, RestaurantsLogo } from './logo';
 
@@ -137,8 +137,11 @@ export default function PricingComparator({ Logotext }) {
                     </div>
                 </div>
             </div>
+
             <section className=" border-y px-3 ">
+                
                 <div className="  relative mx-auto max-w-6xl py-16 border-x  px-6">
+                    <h2 className="text-foreground flex  items-center lg:hidden justify-center gap-2 mb-7 text-balance text-2xl font-semibold">Please Scroll Horizontally on Mobile Devices <MoveRight className=' animate-pulse'></MoveRight></h2>
                     <div className="w-full overflow-auto lg:overflow-visible">
                         <table className="w-[200vw] border-separate border-spacing-x-3 md:w-full dark:[--color-muted:var(--color-zinc-900)]">
                             <thead className="bg-background sticky top-0">

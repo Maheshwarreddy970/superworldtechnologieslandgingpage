@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ChevronRight } from 'lucide-react'
 import * as React from 'react'
@@ -6,8 +5,8 @@ import { RealestateLogo, RecycleLogo, CarDealerLogo, HomeserviceLogo, HealthLogo
 
 export default function GetStartedTab() {
     return (
-        <section>
-            <div className="">
+        <section className=' overflow-hidden'>
+            <div className=" ">
                 <div className="mx-auto max-w-6xl border-x py-32 relative px-6">
                     <div
                         aria-hidden="true"
