@@ -1,7 +1,9 @@
 import { Button } from '@/components/ui/button'
 import { Cpu, Sparkles } from 'lucide-react'
 import Link from 'next/link'
-import { Logo } from './logo';
+import { CarDealerLogo, HealthLogo, HomeserviceLogo, Logo, RealestateLogo, RecycleLogo, RestaurantsLogo } from './logo';
+
+
 
 const tableData = [
     {
@@ -66,18 +68,17 @@ const tableData = [
     },
 ];
 
-
-export default function PricingComparator() {
+export default function PricingComparator({ Logotext }) {
     return (
         <>
             <div id='competition' className='bg-white border-t w-full px-3 '>
                 <div className="relative  mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
-                   
+
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] left-3 translate-x-[1.5px] sm:left-5 md:left-11"
                     />
-                 
+
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] right-3 -translate-x-[1.5px] sm:right-5 md:right-11"
@@ -150,13 +151,26 @@ export default function PricingComparator() {
                                     </th>
                                     <th className="bg-gradient-to-r text-center   from-[#6C00FF]  to-[#9e58ff] text-white rounded-t-(--radius) space-y-1 px-4">
                                         <div aria-label="home" className="flex justify-center  items-center space-x-2" href="/">
-                                            <Logo className={'w-8 h-8 p-0.5 bg-white border shadow rounded-lg  '}></Logo>
+                                            {Logotext === 'restaurants' ? (
+                                                <RestaurantsLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'health' ? (
+                                                <HealthLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'cardealer' ? (
+                                                <CarDealerLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'recycle' ? (
+                                                <RecycleLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'realestate' ? (
+                                                <RealestateLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'homeservice' ? (
+                                                <HomeserviceLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : Logotext === 'main' ? (
+                                                <Logo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            ) : null}
                                         </div>
-                                        <p className=' text-center '>SuperWorld Technologies	</p>
 
                                     </th>
                                     <th className="space-y-3">
-                                        <span className="block">SaaS Platforms </span>
+                                        <span className="block">SaaS Platforms</span>
 
                                     </th>
                                 </tr>

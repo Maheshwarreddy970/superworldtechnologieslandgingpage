@@ -11,20 +11,19 @@ import Testimonials from "@/components/testimonials";
 import TrustedBySection from "@/components/TrustedBy";
 
 export default function Home() {
- 
   return (
     <>
-      <Header Logotext={"main"}></Header>
-      <HeroSection />
+      <Header Logotext={"restaurants"}></Header>
+      <HeroSection mainimage={'/Dashboard Design (1).png'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection Logotext={"main"}></ComparatorSection>
+      <ComparatorSection  Logotext={"restaurants"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>
       <FAQSection></FAQSection>
       <CTA></CTA>
-      <Footer Logotext={"main"}></Footer>
+      <Footer Logotext={"restaurants"}></Footer>
     </>
   );
 }

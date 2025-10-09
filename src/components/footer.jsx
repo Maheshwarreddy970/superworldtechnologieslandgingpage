@@ -1,17 +1,31 @@
 import Link from 'next/link';
-import {Logo} from './logo';
+import { CarDealerLogo, HealthLogo, HomeserviceLogo, Logo, RealestateLogo, RecycleLogo, RestaurantsLogo } from './logo';
 
-const Footer = () => {
+const Footer = ({ Logotext }) => {
   return (
     <footer role="contentinfo" className=" py-8 border-t sm:py-16">
       <div className="mx-auto max-w-6xl space-y-6 px-6">
         {/* Logo and Social Links */}
         <div className="flex flex-wrap justify-between gap-6">
-          <Link aria-label="go home" href="/" className="block size-fit">
-            <Logo className={' h-11 w-11 '}></Logo>
+          <Link aria-label="Home" href="/" className="">
+            {Logotext === 'restaurants' ? (
+              <RestaurantsLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'health' ? (
+              <HealthLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'cardealer' ? (
+              <CarDealerLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'recycle' ? (
+              <RecycleLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'realestate' ? (
+              <RealestateLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'homeservice' ? (
+              <HomeserviceLogo className="h-11 w-11 p-1 " />
+            ) : Logotext === 'main' ? (
+              <Logo className="h-11 w-11 p-1 " />
+            ) : null}
           </Link>
           <div className="flex flex-wrap gap-3 text-sm">
-           
+
             <a
               target="_blank"
               rel="noopener noreferrer"
