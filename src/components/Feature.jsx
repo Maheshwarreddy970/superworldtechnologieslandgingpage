@@ -73,11 +73,11 @@ const FeaturesSection = () => {
                             </div>
                         </div>
                         <div className="mx-auto max-w-3xl text-center ">
-                            <h1 className="text-foreground text-balance text-4xl font-medium sm:text-5xl ">
+                            <h1 className="text-foreground text-balance text-3xl font-medium sm:text-5xl ">
                                 Experience Advanced Features Built for Your Growth
 
                             </h1>
-                            <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance text-lg">
+                            <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance md:text-lg ">
                                 Discover how powerful, AI-driven tools—combined with effortless service—transform your business and make lead generation automatic.
                             </p>
 
@@ -109,27 +109,27 @@ const FeaturesSection = () => {
                                         <div aria-hidden="true" className="group">
                                             <div className="flex items-center gap-1.5 px-6 py-2.5 text-sm rounded-xl font-medium">We handle every technical detail for you:</div>
                                             <div className="relative">
-                                                <div className="bg-card relative overflow-hidden px-6 py-3">
-                                                    <div className="flex  items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9">
-                                                            <IconTemplateFilled stroke={1} className="h-full w-full  fill-white" />
+                                                <div className="bg-card relative overflow-hidden sm:px-6 py-3">
+                                                    <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
+                                                            <IconTemplateFilled stroke={1} className="h-full w-full fill-white" />
                                                         </div>
                                                         <div className="space-y-0.5">
                                                             <h3 className="text-sm font-medium">Free website build:</h3>
                                                             <p className="text-muted-foreground line-clamp-1 text-sm">Custom, professionally designed for your business</p>
                                                         </div>
                                                     </div>
-                                                    <div className="flex  items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-0.5 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9">
-                                                            <IconWorldWww stroke={0.9} className="h-full w-full text-white  fill-[#9e58ff]" />
+                                                    <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-0.5 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
+                                                            <IconWorldWww stroke={0.9} className="h-full w-full text-white fill-[#9e58ff]" />
                                                         </div>
                                                         <div className="space-y-0.5">
                                                             <h3 className="text-sm font-medium">Hosting included:</h3>
                                                             <p className="text-muted-foreground line-clamp-1 text-sm">Reliable, secure, and fast</p>
                                                         </div>
                                                     </div>
-                                                    <div className="flex  items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF]  to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9">
+                                                    <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#6C00FF] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
                                                             <IconAi stroke={1.6} className="h-full w-full text-white " />
                                                         </div>
                                                         <div className="space-y-0.5">

@@ -42,7 +42,7 @@ const Header = ({ Logotext }) => {
                                 <Logo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
                             ) : null}
                         </Link>
-                         <button
+                        <button
                             variant="ghost"
                             size="icon"
                             aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
@@ -61,7 +61,7 @@ const Header = ({ Logotext }) => {
                     <div className="hidden w-[70%] justify-between lg:flex items-center gap-4">
                         <NavigationMenuDemo Logotext={Logotext} />
                         <div className="flex gap-3">
-                            <a href='/getstarted' className=" inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                            <a href='/getstarted' className=" inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
                                 <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
                             </a>
                         </div>
@@ -141,13 +141,11 @@ const Header = ({ Logotext }) => {
                             </AccordionItem>
                         </Accordion>
                         <div className="my-4 flex flex-col gap-3">
-                            <Button
-                                size="sm"
-                                asChild
+                            <a href='/getstarted'
                                 className="bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md border-white/25 ring-1 ring-inset ring-white/15 hover:bg-primary/90"
                             >
-                                <Link href="/getstarted">Get Started</Link>
-                            </Button>
+                                <span >Get Started</span>
+                            </a>
                         </div>
                     </div>
                 </div>

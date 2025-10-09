@@ -83,9 +83,9 @@ export default function IntegrationsSection() {
 
                         </p>
 
-                         <a href='/requestdemo' className=" hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300  inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-              <span>Request Demo</span>
-            </a>
+                        <a href='/requestdemo' className=" hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300  inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border border-zinc-950/25 bg-gradient-to-t from-[#6C00FF] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
+                            <span>Request Demo</span>
+                        </a>
                     </div>
                 </div>
             </div>

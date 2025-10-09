@@ -125,10 +125,10 @@ export default function PricingComparator({ Logotext }) {
                             </div>
                         </div>
                         <div className="mx-auto max-w-3xl text-center ">
-                            <h1 className="text-foreground text-balance text-4xl font-medium sm:text-5xl ">
+                            <h1 className="text-foreground text-balance text-3xl font-medium sm:text-5xl ">
                                 Are You Overpaying for a Website That Doesn't Work?
                             </h1>
-                            <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance text-lg">
+                            <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance md:text-lg ">
                                 Most businesses are trapped in expensive contracts for outdated, underperforming websites. See the side-by-side comparison that proves there’s a smarter way to grow.
 
                             </p>
@@ -139,7 +139,7 @@ export default function PricingComparator({ Logotext }) {
             </div>
 
             <section className=" border-y px-3 ">
-                
+
                 <div className="  relative mx-auto max-w-6xl py-16 border-x  px-6">
                     <h2 className="text-foreground flex  items-center lg:hidden justify-center gap-2 mb-7 text-balance text-2xl font-semibold">Please Scroll Horizontally on Mobile Devices <MoveRight className=' animate-pulse'></MoveRight></h2>
                     <div className="w-full overflow-auto lg:overflow-visible">
