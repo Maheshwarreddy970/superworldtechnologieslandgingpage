@@ -14,15 +14,15 @@ import TrustedBySection from "@/components/TrustedBy";
 
 
 export const metadata = {
-  title: "AI Home Services Websites | SuperWorld Technologies", 
+  title: "AI Home Services Websites | SuperWorld Technologies",
   description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
   openGraph: {
     title: "AI Home Services Websites | SuperWorld Technologies",
     description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
-    url: "https://www.superworldtechnologies.com/home-services",
+    url: "www.superworldtechnologies.com/home-services",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail4.png",
+      url: "www.superworldtechnologies.com/thumbnail4.png",
       width: 1200,
       height: 630,
       alt: "AI Home Services Website Solutions",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Home Services Websites | SuperWorld Technologies",
     description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
-    images: ["https://www.superworldtechnologies.com/thumbnail4.png"],
+    images: ["www.superworldtechnologies.com/thumbnail4.png"],
   },
 }
 
@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSection mainimage={'/hs.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection  Logotext={"homeservice"}  ></ComparatorSection>
+      <ComparatorSection Logotext={"homeservice"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>

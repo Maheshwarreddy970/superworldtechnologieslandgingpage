@@ -30,7 +30,7 @@ const Footer = ({ Logotext }) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/maheshwar-reddy-713927258/"
+              href="www.linkedin.com/in/maheshwar-reddy-713927258/"
               className="text-gray-600 hover:text-blue-600 block"
             >
               <svg className="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">

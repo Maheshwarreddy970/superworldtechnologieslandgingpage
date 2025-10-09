@@ -19,10 +19,10 @@ export const metadata = {
   openGraph: {
     title: "AI Waste Management Websites | SuperWorld Technologies",
     description: "Smart waste management websites with AI material sorting, route optimization, pickup scheduling & customer portals. Increase efficiency by 35% with automated workflows.",
-    url: "https://www.superworldtechnologies.com/waste-management",
+    url: "www.superworldtechnologies.com/waste-management",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail2.png",
+      url: "www.superworldtechnologies.com/thumbnail2.png",
       width: 1200,
       height: 630,
       alt: "AI Waste Management Website Solutions",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Waste Management Websites | SuperWorld Technologies",
     description: "Smart waste management websites with AI material sorting, route optimization, pickup scheduling & customer portals. Increase efficiency by 35% with automated workflows.",
-    images: ["https://www.superworldtechnologies.com/thumbnail2.png"],
+    images: ["www.superworldtechnologies.com/thumbnail2.png"],
   },
 }
 
@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSection mainimage={'/rc.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection  Logotext={"recycle"}  ></ComparatorSection>
+      <ComparatorSection Logotext={"recycle"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>

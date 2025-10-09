@@ -19,10 +19,10 @@ export const metadata = {
   openGraph: {
     title: "AI Real Estate Websites | SuperWorld Technologies",
     description: "Intelligent real estate websites with AI property matching, virtual 3D tours, instant lead capture & automated follow-ups. Convert 50% more buyers to properties.",
-    url: "https://www.superworldtechnologies.com/real-estate",
+    url: "www.superworldtechnologies.com/real-estate",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail1.png",
+      url: "www.superworldtechnologies.com/thumbnail1.png",
       width: 1200,
       height: 630,
       alt: "AI Real Estate Website Solutions",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Real Estate Websites | SuperWorld Technologies",
     description: "Intelligent real estate websites with AI property matching, virtual 3D tours, instant lead capture & automated follow-ups. Convert 50% more buyers to properties.",
-    images: ["https://www.superworldtechnologies.com/thumbnail1.png"],
+    images: ["www.superworldtechnologies.com/thumbnail1.png"],
   },
 }
 
@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSection mainimage={'/re.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection  Logotext={"realestate"}  ></ComparatorSection>
+      <ComparatorSection Logotext={"realestate"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>

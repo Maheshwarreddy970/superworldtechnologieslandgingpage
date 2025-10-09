@@ -19,10 +19,10 @@ export const metadata = {
   openGraph: {
     title: "AI Healthcare Websites & Patient Portals | SuperWorld Technologies",
     description: "HIPAA-compliant healthcare websites with telehealth scheduling, automated patient reminders, secure forms & AI-powered patient care. Reduce no-shows by 30%.",
-    url: "https://www.superworldtechnologies.com/healthcare",
+    url: "www.superworldtechnologies.com/healthcare",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail5.png",
+      url: "www.superworldtechnologies.com/thumbnail5.png",
       width: 1200,
       height: 630,
       alt: "AI Healthcare Website & Patient Portal Solutions",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Healthcare Websites & Patient Portals | SuperWorld Technologies",
     description: "HIPAA-compliant healthcare websites with telehealth scheduling, automated patient reminders, secure forms & AI-powered patient care. Reduce no-shows by 30%.",
-    images: ["https://www.superworldtechnologies.com/thumbnail5.png"],
+    images: ["www.superworldtechnologies.com/thumbnail5.png"],
   },
 }
 
@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSection mainimage={'/hc.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection  Logotext={"health"}  ></ComparatorSection>
+      <ComparatorSection Logotext={"health"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>

@@ -12,13 +12,13 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 // Initialize Firebase using environment variables
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
@@ -71,12 +71,12 @@ export default function InvoicingSection() {
         const formData = new FormData(e.target);
         let data = Object.fromEntries(formData.entries());
 
-        // Prepend https:// to website and social-media if not already present
-        if (data.website && !data.website.startsWith('https://')) {
-            data.website = `https://${data.website}`;
+        // Prepend  to website and social-media if not already present
+        if (data.website && !data.website.startsWith('')) {
+            data.website = `${data.website}`;
         }
-        if (data['social-media'] && !data['social-media'].startsWith('https://')) {
-            data['social-media'] = `https://${data['social-media']}`;
+        if (data['social-media'] && !data['social-media'].startsWith('')) {
+            data['social-media'] = `${data['social-media']}`;
         }
 
         try {
@@ -175,7 +175,7 @@ export default function InvoicingSection() {
                                             className="h-9 text-base md:text-sm pl-16"
                                         />
                                         <span className="text-muted-foreground pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm">
-                                            https://
+
                                         </span>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@ export default function InvoicingSection() {
                                             className="h-9 text-base md:text-sm pl-16"
                                         />
                                         <span className="text-muted-foreground pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm">
-                                            https://
+
                                         </span>
                                     </div>
                                 </div>

@@ -55,7 +55,7 @@ const CTA = () => {
           <div className="col-span-3 flex items-end sm:col-span-2 sm:col-start-6">
             <div className="relative overflow-hidden rounded-xl shadow-xl before:absolute before:inset-0 before:rounded-xl before:border before:border-gray-200/20 before:bg-blue-600/10 aspect-4/5">
               <Image
-                src="https://res.cloudinary.com/dohqjvu9k/image/upload/v1757920113/work3_n5uspm.webp"
+                src="res.cloudinary.com/dohqjvu9k/image/upload/v1757920113/work3_n5uspm.webp"
                 alt="superworldtechnologies hero section work 3"
                 width={927}
                 height={1648}
@@ -69,7 +69,7 @@ const CTA = () => {
           <div className="col-span-3 max-md:flex max-md:items-end sm:col-start-3">
             <div className="relative mt-auto aspect-square h-fit overflow-hidden rounded-xl shadow-xl before:absolute before:inset-0 before:rounded-xl before:border before:border-gray-200/20 before:bg-blue-600/10">
               <Image
-                src="https://res.cloudinary.com/dohqjvu9k/image/upload/v1757920114/work2_eoxbvk.webp"
+                src="res.cloudinary.com/dohqjvu9k/image/upload/v1757920114/work2_eoxbvk.webp"
                 alt="superworldtechnologies hero section work 2"
                 width={3047}
                 height={1868}
@@ -82,7 +82,7 @@ const CTA = () => {
           {/* Image 3 */}
           <div className="relative col-span-4 aspect-video overflow-hidden rounded-xl shadow-xl before:absolute before:inset-0 before:rounded-xl before:border before:border-gray-200/20 before:bg-blue-600/10 max-md:col-start-3 md:col-span-3">
             <Image
-              src="https://res.cloudinary.com/dohqjvu9k/image/upload/v1757920113/work1_e1gkt8.webp"
+              src="res.cloudinary.com/dohqjvu9k/image/upload/v1757920113/work1_e1gkt8.webp"
               alt="superworldtechnologies hero section work 1"
               width={2340}
               height={1560}

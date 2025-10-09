@@ -16,10 +16,10 @@ export const metadata = {
   openGraph: {
     title: "AI Car Dealership Websites | SuperWorld Technologies",
     description: "AI-powered car dealership websites with VIN search, visual inventory browsing, finance calculators & 24/7 sales chat. Convert more browsers into buyers. Launch in 48-72 hours.",
-    url: "https://www.superworldtechnologies.com/car-dealerships",
+    url: "www.superworldtechnologies.com/car-dealerships",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail3.png",
+      url: "www.superworldtechnologies.com/thumbnail3.png",
       width: 1200,
       height: 630,
       alt: "AI Car Dealership Website Solutions",
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Car Dealership Websites | SuperWorld Technologies",
     description: "AI-powered car dealership websites with VIN search, visual inventory browsing, finance calculators & 24/7 sales chat. Convert more browsers into buyers. Launch in 48-72 hours.",
-    images: ["https://www.superworldtechnologies.com/thumbnail3.png"],
+    images: ["www.superworldtechnologies.com/thumbnail3.png"],
   },
 }
 
@@ -42,7 +42,7 @@ export default function Home() {
       <HeroSection mainimage={'/cd.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
-      <ComparatorSection  Logotext={"cardealer"}  ></ComparatorSection>
+      <ComparatorSection Logotext={"cardealer"}  ></ComparatorSection>
       <PricingSection></PricingSection>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>
