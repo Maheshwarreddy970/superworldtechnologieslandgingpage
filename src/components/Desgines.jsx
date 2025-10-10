@@ -72,7 +72,7 @@ export default function Desgines({ TemplateDesigns }) {
                     </div>
                 </div>
             </div>
-            <section className=' relative   mx-auto max-w-6xl border-x px-3 border-t  py-24 md:py-32 '>
+            <section className=' relative   md:mx-auto max-w-6xl border-x mx-3 px-3 border-t  py-24 md:py-32 '>
                 {
                     TemplateDesigns && TemplateDesigns.length > 0 && (
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
