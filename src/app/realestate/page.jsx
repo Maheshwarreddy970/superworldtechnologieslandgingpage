@@ -40,7 +40,76 @@ export const metadata = {
 
 
 
-
+const TemplateDesigns = [
+{
+  img:'/realestate/vistahaven-oC7rQ4lLJAZdkUAZLNTNnmByO4qAwV.jpg',
+  href:'https://vistahaven.framer.website/',
+},
+{
+  img:'/realestate/realest-Zjj3kJD0auKBYi0h8s4G641SW4ScoP.webp',
+  href:'https://realest.framer.website/',
+},
+{
+  img:'/realestate/ambience-qikGboe9lE96L4HmpLc4XlWuapaOBf.webp',
+  href:'https://ambience.framer.website/',
+},
+{
+  img:'/realestate/real-GILsMxn23jgFXU5xK7Ym8e9jELPkJB.webp',
+  href:'https://realagent.framer.website/',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+},
+{
+  img:'/realestate/',
+  href:'',
+}
+]
 
 export default function Home() {
   return (
