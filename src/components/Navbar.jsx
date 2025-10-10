@@ -120,9 +120,9 @@ const Header = ({ Logotext }) => {
 
                                 </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="components" className="border-b-0">
+                            <AccordionItem value="Platforms " className="border-b-0">
                                 <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
-                                    Components
+                                    Platforms 
                                 </AccordionTrigger>
                                 <AccordionContent className="px-4 py-2 flex flex-col gap-2 text-sm">
                                     {components.map((component) => (
@@ -167,7 +167,7 @@ const components = [
     },
     {
         title: 'For Car Dealerships',
-        href: '/cardealer',
+        href: '/car',
         description: 'Stunning inventory showcases, finance application forms, test drive booking, trade-in calculators, and high-converting sales pages.',
     },
     {
@@ -245,7 +245,7 @@ function NavigationMenuDemo({ Logotext }) {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Platforms</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                             {components.map((component) => (

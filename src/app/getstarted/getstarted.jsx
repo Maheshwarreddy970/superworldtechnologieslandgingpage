@@ -37,7 +37,7 @@ export default function GetStartedTab() {
                         </IntegrationCard>
 
                         <IntegrationCard
-                            link={'/cardealer'}
+                            link={'/car'}
                             title="For Car Dealerships"
                             description="Stunning inventory showcases, finance application forms, test drive booking, trade-in calculators, and high-converting sales pages.">
                             <CarDealerLogo />
