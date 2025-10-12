@@ -1,5 +1,6 @@
 import ComparatorSection from "@/components/ComparatorSection";
 import CTA from "@/components/cta";
+import Desgines from "@/components/Desgines";
 import FAQSection from "@/components/faq";
 import FeaturesSection from "@/components/Feature";
 import Footer from "@/components/footer";
@@ -108,6 +109,8 @@ export default function Home() {
       <FeaturesSection></FeaturesSection>
       <ComparatorSection Logotext={"homeservice"}  ></ComparatorSection>
       <PricingSection></PricingSection>
+            <Desgines TemplateDesigns={TemplateDesigns}></Desgines>
+      
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>
       <FAQSection></FAQSection>
