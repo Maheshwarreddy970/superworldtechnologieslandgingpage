@@ -23,7 +23,7 @@ export const metadata = {
     url: "www.superworldtechnologies.com",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "www.superworldtechnologies.com/thumbnail.png",
+      url: "https://www.superworldtechnologies.com/thumbnail.png",
       width: 1200,
       height: 630,
       alt: "SuperWorld Technologies - AI-Powered Business Solutions",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
     description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
-    images: ["www.superworldtechnologies.com/thumbnail.png"],
+    images: ["https://www.superworldtechnologies.com/thumbnail.png"],
   },
 }
 

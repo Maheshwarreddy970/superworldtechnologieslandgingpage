@@ -19,10 +19,10 @@ export const metadata = {
   openGraph: {
     title: "AI Home Services Websites | SuperWorld Technologies",
     description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
-    url: "www.superworldtechnologies.com/home-services",
+    url: "https://www.superworldtechnologies.com/home-services",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "www.superworldtechnologies.com/thumbnail4.png",
+      url: "https://www.superworldtechnologies.com/thumbnail4.png",
       width: 1200,
       height: 630,
       alt: "AI Home Services Website Solutions",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Home Services Websites | SuperWorld Technologies",
     description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
-    images: ["www.superworldtechnologies.com/thumbnail4.png"],
+    images: ["https://www.superworldtechnologies.com/thumbnail4.png"],
   },
 }
 

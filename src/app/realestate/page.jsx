@@ -20,10 +20,10 @@ export const metadata = {
   openGraph: {
     title: "AI Real Estate Websites | SuperWorld Technologies",
     description: "Intelligent real estate websites with AI property matching, virtual 3D tours, instant lead capture & automated follow-ups. Convert 50% more buyers to properties.",
-    url: "www.superworldtechnologies.com/real-estate",
+    url: "https://www.superworldtechnologies.com/real-estate",
     siteName: "SuperWorld Technologies",
     images: [{
-      url: "www.superworldtechnologies.com/thumbnail1.png",
+      url: "https://www.superworldtechnologies.com/thumbnail1.png",
       width: 1200,
       height: 630,
       alt: "AI Real Estate Website Solutions",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "AI Real Estate Websites | SuperWorld Technologies",
     description: "Intelligent real estate websites with AI property matching, virtual 3D tours, instant lead capture & automated follow-ups. Convert 50% more buyers to properties.",
-    images: ["www.superworldtechnologies.com/thumbnail1.png"],
+    images: ["https://www.superworldtechnologies.com/thumbnail1.png"],
   },
 }
 
@@ -42,7 +42,7 @@ export const metadata = {
 
 
 const TemplateDesigns = [
-   {
+  {
     img: "/realestate/kaliso-8yohk38usT6mjpTs9nu2VqwehQnZWp.webp",
     href: 'https://kaliso.framer.website/',
   },
@@ -162,7 +162,7 @@ const TemplateDesigns = [
     img: '/realestate/azura-cFzkrMzIprYV1wURaEm6Iekvjy4Nrh.webp',
     href: 'https://azura.framer.website/',
   },
- 
+
   {
     img: "/realestate/swaarg-Rsu6eCI9zMYj9y628wfmgMpywKv4Nd.webp",
     href: 'https://swaarg.framer.website/?via=remixframer',

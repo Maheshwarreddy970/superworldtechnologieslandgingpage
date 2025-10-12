@@ -7,7 +7,7 @@ export default function GetStartedTab() {
     return (
         <section className=' overflow-hidden'>
             <div className=" ">
-                <div className="mx-auto max-w-6xl border-x py-32 relative px-6">
+                <div className="md:mx-auto max-w-6xl mx-3 border-x py-32 relative px-6">
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px]  translate-x-[1.5px]   -left-[3.5px]"
