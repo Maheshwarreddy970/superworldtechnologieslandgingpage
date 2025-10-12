@@ -95,39 +95,7 @@ const TemplateDesigns = [
   {
     img: '/homeservice/elNJRSSFA2GLERt3qcPCyHHc0-HqxXo9ThnfX8C1P8tkYotglfTowi9B.jpg',
     href: 'https://plumby.framer.website/'
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
-  {
-    img: '/homeservice/',
-    href: ''
-  },
+  }
 ]
 
 
