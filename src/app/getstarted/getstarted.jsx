@@ -81,7 +81,7 @@ const IntegrationCard = ({ title, description, children, link }) => {
                     <p className="text-muted-foreground line-clamp-3 text-sm">{description}</p>
                 </div>
 
-                <div className="flex gap-3 border-t border-dashed pt-6">
+                <div className="flex gap-3 flex-col md:flex-row border-t border-dashed pt-6">
                     <a href={link} className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border border-zinc-950/25 text-[#6C00FF] shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
                         <span>More Info</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
                     </a>

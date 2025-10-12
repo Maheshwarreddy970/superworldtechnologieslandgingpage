@@ -48,6 +48,10 @@ const TemplateDesigns = [
     img: "/health/deentiva-RZSuWBwDoWaQ53r4G15adZP4gLTu3A.webp",
     href: 'https://dentiva.framer.ai/',
   },
+    {
+    img: "/health/dentina-qZoV06qGENYaWlgBs4iFFLf8XVOTdW.webp",
+    href: 'https://dentina.framer.website/',
+  },
   {
     img: "/health/R6UbIKFwmwp1wMuGPeL1u1iTM-XE69aFfYyE4PtmYuD3p01reUD2TJ7i.jpg",
     href: 'https://irisa.framer.website/',

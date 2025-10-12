@@ -39,7 +39,164 @@ export const metadata = {
 
 
 
-
+const TemplateDesigns=[
+  {
+    img: "/recycle/",
+    href: 'https://moodtemplate.framer.website/',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+  {
+    img: "/recycle/",
+    href: '',
+  },
+]
 
 
 export default function Home() {
