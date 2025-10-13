@@ -1,5 +1,6 @@
 import ComparatorSection from "@/components/ComparatorSection";
 import CTA from "@/components/cta";
+import Demovideo from "@/components/Demovideo";
 import Desgines from "@/components/Desgines";
 import FAQSection from "@/components/faq";
 import FeaturesSection from "@/components/Feature";
@@ -171,9 +172,10 @@ export default function Home() {
       <HeroSection mainimage={'/hc.jpg'} />
       <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
+      <Demovideo></Demovideo>
+      <Desgines TemplateDesigns={TemplateDesigns}></Desgines>
       <ComparatorSection Logotext={"health"}  ></ComparatorSection>
       <PricingSection></PricingSection>
-      <Desgines TemplateDesigns={TemplateDesigns}></Desgines>
       <IntegrationsSection></IntegrationsSection>
       <Testimonials></Testimonials>
       <FAQSection></FAQSection>
