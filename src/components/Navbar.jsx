@@ -71,7 +71,7 @@ const Header = ({ Logotext }) => {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`lg:hidden fixed inset-x-0 top-[4.7rem] bg-white/95 backdrop-blur-xl border-b transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                    className={`lg:hidden fixed overflow-y-scroll inset-x-0 top-[4.7rem] bg-white/95 backdrop-blur-xl border-b transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                         }`}
                 >
                     <div className="mx-auto max-w-6xl px-4 py-4">
