@@ -41,17 +41,37 @@ export const metadata = {
 
 
 const TemplateDesigns = [
-    {
+  {
     img: "/health/dentoi-8kQtEYGVw3ZmXcmZRyxWr0cBU9J6wp.webp",
     href: 'https://dentoi.framer.website/',
   },
-    {
+  {
     img: "/health/deentiva-RZSuWBwDoWaQ53r4G15adZP4gLTu3A.webp",
     href: 'https://dentiva.framer.ai/',
   },
-    {
+  {
     img: "/health/dentina-qZoV06qGENYaWlgBs4iFFLf8XVOTdW.webp",
     href: 'https://dentina.framer.website/',
+  },
+  {
+    img: "/health/dental-cHvqe23pZ8CzAwvtB6kRaEsG88SsdK.webp",
+    href: 'https://dental-template.framer.website/'
+  },
+  {
+    img: "/health/UYwNYc1zHwL6UW97gcx1pNK27w-rICOs6NXhpFSxD4BJ5CtPoyRG1rXEt.jpg",
+    href: 'https://dentica.framer.website/'
+  },
+  {
+    img: "/health/dentify-n0zdb3hYoT8TimvD4jvQHqkXDPlLTa.webp",
+    href: 'https://dentify.framer.website/'
+  },
+  {
+    img: "/health/s2-ut4wlorwIa9ZldrgvK6EDgX42YgiQM.webp",
+    href: 'https://dental-care.framer.website/'
+  },
+  {
+    img: '/health/smilebrite-wiXoz1jokrZHNOrUl6VEE2NUz77Kdk.webp',
+    href: 'https://smilebright.framer.website/'
   },
   {
     img: "/health/R6UbIKFwmwp1wMuGPeL1u1iTM-XE69aFfYyE4PtmYuD3p01reUD2TJ7i.jpg",
@@ -61,11 +81,11 @@ const TemplateDesigns = [
     img: "/health/curely-gKyF5V7A284g2zu6aVr2WaRHBirH2j.webp",
     href: 'https://curely.framer.website/?via=diversekit',
   },
-    {
+  {
     img: "/health/vitalflow-fe8kNpedCdhkbFeOI0KUO7eOlxnfRZ.webp",
     href: 'https://vitalflow.framer.website/',
   },
-   {
+  {
     img: "/health/healiix-WL0w8CD3rRxudSpr44u44BZLqDj8sC.webp",
     href: 'https://healixx.framer.website/',
   },
@@ -77,8 +97,8 @@ const TemplateDesigns = [
     img: "/health/holicare-8GStY5QnMaWnJJrZzKG0XWFIwc0Cq6.webp",
     href: 'https://holicare.framer.website/',
   },
- 
-  
+
+
   {
     img: "/health/nqDI5DFmQsoC0f1NXbjmnojEE-QXDxnCIwKLitmxZvAgLUUSHIIeKFVF.jpg",
     href: 'https://mediaid.framer.website/?via=framerdevs',
@@ -87,7 +107,7 @@ const TemplateDesigns = [
     img: "/health/calvio-RJRGcr2hSNCyj07MaM8MetAyAfZrwX.webp",
     href: 'https://calvio-template.framer.website/',
   },
-  
+
   {
     img: "/health/peacehub-crEYUCrpnUSGIZjIWn53P20cJ5nqf4.webp",
     href: 'https://peacehub.framer.website/',
@@ -100,7 +120,7 @@ const TemplateDesigns = [
     img: "/health/mentaaheal-jSGqc9bwyW3OnRp6hMymVLdFMcGp2S.webp",
     href: 'https://mentaheal.framer.website/service',
   },
- 
+
 
   {
     img: "/health/cureva-2pRpS6NnzbYFDpJ1E05pDiOnPqQL6Y.webp",
@@ -130,7 +150,7 @@ const TemplateDesigns = [
     img: "/health/Q0g-2tEdlRsmwZpiBJrx87ztso0m9OLHgHWhjz0JPsYL1c0BuVvx9YO56rNVoeo1M1_3jDDqKOLqYWogsV7_L6X8pYqPJqgV8kUA-vfY4-aRNOYi-05ldDifYvZCkVqzlIigoeIMk2XxV1KTwKq1KgWZUYfVSVv5pfO1.webp",
     href: 'https://bettermedical.framer.website/',
   },
-  
+
   {
     img: "/health/xClgH7lfTcvrtu7Nc1j5t6vIk4-T7rWE2LzPjzG6N8gxRsldmO9BhTR3t.jpg",
     href: 'https://sensei.framer.website/?via=framership',
