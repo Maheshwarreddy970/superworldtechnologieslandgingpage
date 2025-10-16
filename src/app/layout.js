@@ -16,47 +16,39 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-  description:
-    "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
+  description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
   openGraph: {
     title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-    description:
-      "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
-    url: "https://www.superworldtechnologies.com",
+    description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
+    url: "www.superworldtechnologies.com",
     siteName: "SuperWorld Technologies",
-    images: [
-      {
-        url: "https://www.superworldtechnologies.com/thumbnail.png",
-        width: 1200,
-        height: 630,
-        alt: "SuperWorld Technologies - AI-Powered Business Solutions",
-      },
-    ],
+    images: [{
+      url: "https://www.superworldtechnologies.com/thumbnail.png",
+      width: 1200,
+      height: 630,
+      alt: "SuperWorld Technologies - AI-Powered Business Solutions",
+    }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-    description:
-      "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
+    description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
     images: ["https://www.superworldtechnologies.com/thumbnail.png"],
   },
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/web-app-manifest-512x512.png", sizes: "32x32", type: "image/png" },
-      { url: "/web-app-manifest-512x512.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-  },
-};
-
+}
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon0.svg" type="image/svg+xml" />
+        <link rel="icon" href="/icon1.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
