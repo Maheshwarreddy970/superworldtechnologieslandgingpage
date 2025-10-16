@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "AI Home Services Websites | SuperWorld Technologies",
     description: "Smart home services websites with photo-based instant quotes, dynamic scheduling, customer reviews & automated booking. Get 40% more booked jobs.",
-    url: "https://www.superworldtechnologies.com/home-services",
+    url: "https://www.superworldtechnologies.com/homeservice",
     siteName: "SuperWorld Technologies",
     images: [{
       url: "https://www.superworldtechnologies.com/thumbnail4.png",

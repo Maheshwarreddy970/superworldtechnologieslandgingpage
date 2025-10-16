@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "AI Car Dealership Websites | SuperWorld Technologies",
     description: "AI-powered car dealership websites with VIN search, visual inventory browsing, finance calculators & 24/7 sales chat. Convert more browsers into buyers. Launch in 48-72 hours.",
-    url: "https://www.superworldtechnologies.com/car-dealerships",
+    url: "https://www.superworldtechnologies.com/car",
     siteName: "SuperWorld Technologies",
     images: [{
       url: "https://www.superworldtechnologies.com/thumbnail3.png",

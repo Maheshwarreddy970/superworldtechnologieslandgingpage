@@ -19,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "AI Waste Management Websites | SuperWorld Technologies",
     description: "Smart waste management websites with AI material sorting, route optimization, pickup scheduling & customer portals. Increase efficiency by 35% with automated workflows.",
-    url: "https://www.superworldtechnologies.com/waste-management",
+    url: "https://www.superworldtechnologies.com/recycle",
     siteName: "SuperWorld Technologies",
     images: [{
       url: "https://www.superworldtechnologies.com/thumbnail2.png",

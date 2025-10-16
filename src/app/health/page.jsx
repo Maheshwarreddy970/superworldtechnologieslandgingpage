@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "AI Healthcare Websites & Patient Portals | SuperWorld Technologies",
     description: "HIPAA-compliant healthcare websites with telehealth scheduling, automated patient reminders, secure forms & AI-powered patient care. Reduce no-shows by 30%.",
-    url: "https://www.superworldtechnologies.com/healthcare",
+    url: "https://www.superworldtechnologies.com/health",
     siteName: "SuperWorld Technologies",
     images: [{
       url: "https://www.superworldtechnologies.com/thumbnail5.png",

@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "AI Real Estate Websites | SuperWorld Technologies",
     description: "Intelligent real estate websites with AI property matching, virtual 3D tours, instant lead capture & automated follow-ups. Convert 50% more buyers to properties.",
-    url: "https://www.superworldtechnologies.com/real-estate",
+    url: "https://www.superworldtechnologies.com/realestate",
     siteName: "SuperWorld Technologies",
     images: [{
       url: "https://www.superworldtechnologies.com/thumbnail1.png",
